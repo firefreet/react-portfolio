@@ -1,0 +1,123 @@
+/* css primarily needed for exact fonts, colors
+and pixel sizing since bootstrap seems to have only
+generic fonts and colors and dynamic sizes */
+
+
+/* default text settings for page */
+html, body {
+    color: darkslategray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /* png from https://www.toptal.com/designers/subtlepatterns/ */
+    background-image: url(../images/greek-vase.png);
+    line-height: 1;
+}
+
+/* font for headings */
+h2, h3, h4, .card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fixed-card-text {
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+}
+
+/* set main content width */
+.container {
+max-width: 736px;
+}
+
+/* theme color */
+.navbar-brand, #submitbutton {
+background: #9DBBCF !important;
+border-width: 0px !important;
+}
+h4 {
+color: #9DBBCF;
+}
+
+a {
+    color: #9CA0DB;
+    font-style: italic;
+}
+
+/* darken horizontal rule */
+hr {
+color: #9DBBCF;
+background-color: #9DBBCF;
+}
+
+/* set hover and focus color of links to theme */
+a:hover {
+color: #9DBBCF !important;
+}
+a:focus {
+background-color: #9DBBCF;
+}
+#submitbutton:hover {
+background-color: #A5B7D9 !important;
+}
+#submitbutton:active {
+background-color: #B49DCF !important;
+}
+
+/* adjust text line height */
+/* set main content height so it is always large enough to 
+push footer to bottom of screen */
+#maincontent {
+line-height: 1.15;
+min-height: calc(100vh - 137px);
+}
+
+/* format footer */
+.footer {
+height: 50px;
+font-size: 11px;
+border-top-color: #9DBBCF !important;
+border-top-width: 8px !important;
+background: #666666;
+}
+
+h5 {
+    font-style: italic;
+}
+
+/* style placeholder text for text input fields */
+*::placeholder {
+color: #cccccc !important;
+font-style: italic;
+}
+
+/* set message box input height */
+textarea {
+height: 23vh !important;
+border-color: #cccccc !important;
+}
+
+.input-border {
+    border: 1px solid #cccccc !important;
+}
+
+/* data validation color */
+#emailField:invalid {
+background-color: #B863A9;
+}
+
+.card-text {
+    background-color: #9DBBCF;
+
+}
+
+/* hides link dividers when collapsed. */
+@media screen and (max-width: 576px) {
+    .disappear {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    h2 {
+        font-size: 25px;
+    }
+}
