@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './style.css'
 
 function Nav(){
     return(
@@ -16,7 +17,7 @@ function Nav(){
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav p-0 ml-auto mx-auto ml-md-auto">
-                        <Link className={window.location.pathname === "/index" ? "nav-item nav-link active" : "nav-item nav-link"} to="/index">About<span className="sr-only">(current)</span></Link>
+                        <Link className={window.location.pathname === "/" ? "nav-item nav-link active" : "nav-item nav-link"} to="/">About<span className="sr-only">(current)</span></Link>
                         <p className="disappear p-auto m-auto"> | </p>
                         <Link className={window.location.pathname === "/portfolio" ? "nav-item nav-link active" : "nav-item nav-link"} to="/portfolio">Portfolio</Link>
                         <p className="disappear p-auto m-auto"> | </p>

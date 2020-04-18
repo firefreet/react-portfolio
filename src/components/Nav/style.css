@@ -1,0 +1,6 @@
+/* hides link dividers when collapsed. */
+@media screen and (max-width: 576px) {
+    .disappear {
+        display: none;
+    }
+}

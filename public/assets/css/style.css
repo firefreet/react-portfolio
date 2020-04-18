@@ -70,23 +70,8 @@ line-height: 1.15;
 min-height: calc(100vh - 137px);
 }
 
-/* format footer */
-.footer {
-height: 50px;
-font-size: 11px;
-border-top-color: #9DBBCF !important;
-border-top-width: 8px !important;
-background: #666666;
-}
-
 h5 {
     font-style: italic;
-}
-
-/* style placeholder text for text input fields */
-*::placeholder {
-color: #cccccc !important;
-font-style: italic;
 }
 
 /* set message box input height */
@@ -99,21 +84,8 @@ border-color: #cccccc !important;
     border: 1px solid #cccccc !important;
 }
 
-/* data validation color */
-#emailField:invalid {
-background-color: #B863A9;
-}
-
 .card-text {
     background-color: #9DBBCF;
-
-}
-
-/* hides link dividers when collapsed. */
-@media screen and (max-width: 576px) {
-    .disappear {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 374px) {
