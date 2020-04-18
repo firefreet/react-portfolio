@@ -1,4 +1,6 @@
 import React from 'react';
+import apps from '../data/projects.js';
+
 
 function Portfolio() {
     return (
@@ -16,68 +18,20 @@ function Portfolio() {
                                 <hr className="my-2" />
                                 <br />
                                 <div className="row">
-                                    <div className="col-md-6 mb-5">
-                                        <a href="https://github.com/firefreet/super-duper-guacamole" className="card">
-                                            <img src="assets/images/burger-app.png" alt="" className="img-fluid card-img" />
-                                            <div className="card-img-overlay px-0">
-                                                <p className="card-text fixed-card-text text-white text-center p-2">Burger App</p>
-                                            </div>
-                                        </a>
-                                        <a className="d-flex justify-content-center"
-                                            href="https://github.com/firefreet/super-duper-guacamole">Git Hub Repo</a>
-                                        <a className="d-flex justify-content-center" href="https://infinite-waters-23370.herokuapp.com">Heroku deployed app</a>
-                                    </div>
-                                    <div className="col-md-6 mb-5">
-                                        <a href="https://github.com/ShaneKeney/TestPrep" className="card">
-                                            <img src="assets/images/test.png" alt="" className="img-fluid card-img" />
-                                            <div className="card-img-overlay px-0">
-                                                <p className="card-text fixed-card-text text-white text-center p-2">Test Prep App</p>
-                                            </div>
-                                        </a>
-                                        <a className="d-flex justify-content-center" href="https://github.com/ShaneKeney/TestPrep">Git Hub Repo</a>
-                                        <a className="d-flex justify-content-center" href="https://test-prep-prod.herokuapp.com">Heroku deployed app</a>
-                                    </div>
-                                    <div className="col-md-6 mb-5">
-                                        <a href="https://firefreet.github.io/calendar/index.html" className="card">
-                                            <img src="assets/images/calendarScreenshot.png" alt="" className="img-fluid card-img" />
-                                            <div className="card-img-overlay px-0">
-                                                <p className="card-text fixed-card-text text-white text-center p-2">Calendar</p>
-                                            </div>
-                                        </a>
-                                        <a className="d-flex justify-content-center" href="https://github.com/firefreet/calendar">Git Hub Repo</a>
-                                        <a href="https://firefreet.github.io/calendar/" className="d-flex justify-content-center">Git Hub Pages deployed app</a>
-                                    </div>
-                                    <div className="col-md-6 mb-5">
-                                        <a href="https://firefreet.github.io/weather-app" className="card">
-                                            <img src="assets/images/weatherScreenshot.png" alt="" className="img-fluid card-img" />
-                                            <div className="card-img-overlay px-0">
-                                                <p className="card-text fixed-card-text text-white text-center p-2">Weather Dashboard</p>
-                                            </div>
-                                        </a>
-                                        <a className="d-flex justify-content-center" href="https://github.com/firefreet/weather-app">Git Hub Repo</a>
-                                        <a href="https://firefreet.github.io/weather-app/" className="d-flex justify-content-center">Git Hub Pages deployed app</a>
-                                    </div>
-                                    <div className="col-md-6 mb-5">
-                                        <a href="https://github.com/pjpetro/JubilantCouscous" className="card">
-                                            <img src="assets/images/foodScreenshot.png" alt="" className="img-fluid card-img" />
-                                            <div className="card-img-overlay px-0">
-                                                <p className="card-text fixed-card-text text-white text-center p-2">Restaurant Finder</p>
-                                            </div>
-                                        </a>
-                                        <a className="d-flex justify-content-center" href="https://github.com/pjpetro/JubilantCouscous">Git Hub Repo</a>
-                                        <a href="https://pjpetro.github.io/JubilantCouscous/" className="d-flex justify-content-center">Git Hub Pages deployed app</a>
-                                    </div>
-                                    <div className="col-md-6 mb-5">
-                                        <a href="https://github.com/firefreet/templateEngine" className="card">
-                                            <img src="assets/images/screenshot.png" alt="" className="img-fluid card-img" />
-                                            <div className="card-img-overlay px-0">
-                                                <p className="card-text fixed-card-text text-white text-center p-2">Template Engine</p>
-                                            </div>
-                                        </a>
-                                        <a className="d-flex justify-content-center" href="https://github.com/firefreet/templateEngine">Git Hub Repo</a>
-                                        <a className="d-flex justify-content-center">Command line app</a>
-                                    </div>
-
+                                    {apps.map(v=>{
+                                        return(
+                                            <div className="col-md-6 mb-5">
+                                            <a href={v.gitHref} className="card">
+                                                <img src={v.imgSrc} alt="" className="img-fluid card-img" />
+                                                <div className="card-img-overlay px-0">
+                                                    <p className="card-text fixed-card-text text-white text-center p-2">{v.appName}</p>
+                                                </div>
+                                            </a>
+                                            <a className="d-flex justify-content-center" href={v.gitHref}>Git Hub Repo</a>
+                                            <a className="d-flex justify-content-center" href={v.deployHref}>{v.deployText}</a>
+                                        </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>
