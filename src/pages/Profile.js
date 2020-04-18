@@ -33,7 +33,7 @@ function Profile() {
                                     perhaps I don't dislike people after all. I suppose anything is possible.</p>
                                 <br></br>
                                 <h5>Check out my
-                                        <a href="./assets/pdfs/Jeremy Marotta_Resume_2020-03-21.pdf">...resume!</a>
+                                        <a href="./assets/pdfs/Jeremy Marotta_Resume.pdf">...resume!</a>
                                 </h5>
                             </div>
                         </div>
