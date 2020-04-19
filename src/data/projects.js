@@ -40,5 +40,12 @@ export default [
         appName: "Template Engine",
         deployHref: "",
         deployText: "Command line app"
+    },
+    {
+        gitHref: "https://github.com/firefreet/super-duper-waffle",
+        imgSrc: "assets/images/workout.png",
+        appName: "Workout Tracker",
+        deployHref: "https://still-ocean-84125.herokuapp.com/",
+        deployText: "Heroku deployed app"
     }
 ]
