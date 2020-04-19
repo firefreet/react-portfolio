@@ -14,14 +14,14 @@ export default [
         deployText: "Heroku deployed app"
     },
     {
-        gitHref: "https://firefreet.github.io/calendar/index.html",
+        gitHref: "https://github.com/firefreet/calendar",
         imgSrc: "assets/images/calendarScreenshot.png",
         appName: "Calendar",
         deployHref: "https://firefreet.github.io/calendar/",
         deployText: "Git Hub Pages deployed app"
     },
     {
-        gitHref: "https://firefreet.github.io/weather-app",
+        gitHref: "https://github.com/firefreet/weather-app",
         imgSrc: "assets/images/weatherScreenshot.png",
         appName: "Weather Dashboard",
         deployHref: "https://firefreet.github.io/weather-app/",
